@@ -1,5 +1,5 @@
 <div class="container" >
-<h1>User Profile</h1>
+<h1 class="title">{{title}}</h1>
 
 
 
@@ -10,7 +10,9 @@
   
 
 <div class="card__links">
-  <app-social-link></app-social-link>
+  <app-social-link name="Github"></app-social-link>
+  <app-social-link [name]="'LinkedIn'"></app-social-link>
+  <app-social-link [name]="'Twitter'"></app-social-link>
 </div>
 </div>
 </div>

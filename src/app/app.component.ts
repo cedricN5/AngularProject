@@ -11,5 +11,5 @@ import { SocialLinkComponent } from './components/social-link/social-link.compon
   styleUrl: './app.component.scss'
 })
 export class AppComponent {
-  title = 'userprofile';
+  title = 'User Profile';
 }

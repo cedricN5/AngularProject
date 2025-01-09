@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'app-social-link',
@@ -7,5 +7,14 @@ import { Component } from '@angular/core';
   styleUrl: './social-link.component.scss'
 })
 export class SocialLinkComponent {
+
+@Input()
+name = 'Empty';
+
+getlink(): void{
+  console.log(this.name);
+}
+
+
 
 }
