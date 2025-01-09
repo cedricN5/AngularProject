@@ -12,4 +12,9 @@ import { SocialLinkComponent } from './components/social-link/social-link.compon
 })
 export class AppComponent {
   title = 'User Profile';
+  selectedLink ="Empty selection";
+
+  displayLink(value:string){
+    this.selectedLink =value;
+  }
 }

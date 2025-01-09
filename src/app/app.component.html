@@ -10,10 +10,13 @@
   
 
 <div class="card__links">
-  <app-social-link name="Github"></app-social-link>
-  <app-social-link [name]="'LinkedIn'"></app-social-link>
-  <app-social-link [name]="'Twitter'"></app-social-link>
+  <app-social-link (selectLink)="displayLink($event)" [name]="'Github'"></app-social-link>
+  <app-social-link (selectLink)="displayLink($event)" [name]="'LinkedIn'"></app-social-link>
+  <app-social-link (selectLink)="displayLink($event)"[name]="'Twitter'"></app-social-link>
 </div>
 </div>
+
+<p class="screen"> {{selectedLink}}</p>
+
 </div>
 
