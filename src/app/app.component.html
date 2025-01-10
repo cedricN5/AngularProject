@@ -10,13 +10,21 @@
   
 
 <div class="card__links">
-  <app-social-link (selectLink)="displayLink($event)" [name]="'Github'"></app-social-link>
+  @for(link of linkTab; track $index){
+    <app-social-link (selectLink)="displayLink($event)" [name]='link'></app-social-link>
+  }
+
+
+  <!-- <app-social-link (selectLink)="displayLink($event)" [name]="'Github'"></app-social-link>
   <app-social-link (selectLink)="displayLink($event)" [name]="'LinkedIn'"></app-social-link>
-  <app-social-link (selectLink)="displayLink($event)"[name]="'Twitter'"></app-social-link>
+  <app-social-link (selectLink)="displayLink($event)"[name]="'Twitter'"></app-social-link> -->
 </div>
 </div>
 
+@if(selectedLink!= 'Empty selection'){
 <p class="screen"> {{selectedLink}}</p>
+<button (click)="resetLink()">Réinitialiser</button>
+}
 
 </div>
 
