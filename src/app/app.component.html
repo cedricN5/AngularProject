@@ -11,7 +11,7 @@
 
 <div class="card__links">
   @for(link of linkTab; track $index){
-    <app-social-link (selectLink)="displayLink($event)" [name]='link'></app-social-link>
+    <app-social-link (selectLink)="displayLink($event)" [socialLinK]= "link"></app-social-link>
   }
 
 
