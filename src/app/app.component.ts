@@ -18,6 +18,7 @@ export class AppComponent {
   screenStyle: string= "screen";
 
  linkTab: SocialLink[]= []
+ 
 
  constructor (private dataService: DataService){}
 

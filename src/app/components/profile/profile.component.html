@@ -1,0 +1,20 @@
+
+
+
+<div class="card" > 
+  <app-profile-photo></app-profile-photo> 
+ <app-profile-description></app-profile-description>
+
+  
+
+<div class="card__links">
+  @for(link of linkTab; track $index){
+    <app-social-link (selectLink)="displayLink($event)" [socialLinK]= "link"></app-social-link>
+  }
+
+
+  <!-- <app-social-link (selectLink)="displayLink($event)" [name]="'Github'"></app-social-link>
+  <app-social-link (selectLink)="displayLink($event)" [name]="'LinkedIn'"></app-social-link>
+  <app-social-link (selectLink)="displayLink($event)"[name]="'Twitter'"></app-social-link> -->
+</div>
+</div>
